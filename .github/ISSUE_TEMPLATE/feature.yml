@@ -1,0 +1,21 @@
+name: Feature
+description: New capability in one of the projects
+labels: [feature]
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project folder
+      placeholder: 01-linux-devops-toolkit
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Acceptance criteria
