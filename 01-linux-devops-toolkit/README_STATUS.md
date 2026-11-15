@@ -1,0 +1,14 @@
+# Status: 01-linux-devops-toolkit
+
+| Component | Status |
+|---|---|
+| scaffold | in progress |
+| backup.sh | planned |
+| healthcheck.sh | planned |
+| log-cleanup.sh | planned |
+| user-provision.sh | planned |
+| systemd units | planned |
+| devtool (Python) | planned |
+| logparser (C++) | planned |
+| CI | planned |
+| release v1.0.0 | planned |
