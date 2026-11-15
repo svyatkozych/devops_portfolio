@@ -1,0 +1,22 @@
+name: linux-devops-toolkit
+
+services:
+  sandbox:
+    image: ubuntu:24.04
+    profiles: [lab]
+    working_dir: /toolkit
+    volumes:
+      - .:/toolkit
+    command: >
+      bash -c "apt-get update -qq && apt-get install -y -qq curl iproute2 >/dev/null && sleep infinity"
+
+  web:
+    image: nginx:1.27-alpine
+    profiles: [lab]
+    ports:
+      - '8080:80'
+    healthcheck:
+      test: ['CMD', 'wget', '-q0-', 'http://localhost/']
+      interval: 10s
+      timeout: 3s
+      retries: 3
