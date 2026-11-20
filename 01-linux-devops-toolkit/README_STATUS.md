@@ -3,7 +3,7 @@
 | Component | Status |
 |---|---|
 | scaffold | in progress |
-| backup.sh | planned |
+| backup.sh | done |
 | healthcheck.sh | planned |
 | log-cleanup.sh | planned |
 | user-provision.sh | planned |
