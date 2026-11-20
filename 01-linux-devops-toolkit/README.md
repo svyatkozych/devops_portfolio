@@ -1,5 +1,7 @@
 # 01. Linux DevOps Toolkit
 
+![CI](https://github.com/svyatkozych/devops_portfolio/actions/workflows/01-toolkit.yml/badge.svg)
+
 Bash, Python and C++ utilities for everyday DevOps tasks on Linux: backups with rotation, health checks, log cleanup, idempotent user provisioning, log analysis and Telegram alerts.
 
 ![Shell](https://img.shields.io/badge/shell-bash-4EAA25)
