@@ -4,7 +4,7 @@
 |---|---|
 | scaffold | in progress |
 | backup.sh | done |
-| healthcheck.sh | planned |
+| healthcheck.sh | done |
 | log-cleanup.sh | planned |
 | user-provision.sh | planned |
 | systemd units | planned |
