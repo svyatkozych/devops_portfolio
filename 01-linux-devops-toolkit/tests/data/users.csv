@@ -1,0 +1,3 @@
+username,group,shell,sudo,ssh_public_key
+alice,devs,/bin/bash,yes,ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIExampleKeyAlice alice@example
+bob,devs,/bin/bash,no,
