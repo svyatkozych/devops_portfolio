@@ -1,0 +1,11 @@
+[Unit]
+Description=Toolkit health check
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/etc/toolkit/healthcheck.env
+ExecStart=/opt/toolkit/scripts/healthcheck.sh ${HEALTH_ARGS}
+NoNewPrivileges=true
+PrivateTmp=true
