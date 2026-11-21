@@ -1,0 +1,11 @@
+[Unit]
+Description=Toolkit backup job
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/etc/toolkit/backup.env
+ExecStart=/opt/toolkit/scripts/backup.sh -k ${BACKUP_KEEP} ${BACKUP_SRC} ${BACKUP_DEST}
+NoNewPrivileges=true
+PrivateTmp=true

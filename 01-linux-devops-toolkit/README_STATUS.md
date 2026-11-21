@@ -7,7 +7,7 @@
 | healthcheck.sh | done |
 | log-cleanup.sh | planned |
 | user-provision.sh | planned |
-| systemd units | planned |
+| system units | done |
 | devtool (Python) | planned |
 | logparser (C++) | planned |
 | CI | planned |
