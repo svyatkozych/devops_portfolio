@@ -10,7 +10,7 @@ requires-python = ">=3.10"
 dependencies = ["typer>=0.12", "psutil>=5.9", "requests>=2.31"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.5"]
+dev = ["pytest>=9.2.0", "pytest-cov>=5", "ruff>=0.5"]
 
 [project.scripts]
 devtool = "devtool.cli:app"
