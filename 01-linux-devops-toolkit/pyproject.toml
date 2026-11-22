@@ -7,7 +7,7 @@ name = "devtool"
 version = "0.1.0"
 description = "DevOps helper CLI: log analysis, SSL checks, system report, alerts"
 requires-python = ">=3.10"
-dependencies = ["typer>=0.12", "psutil>=5.9", "requests>=2.31"]
+dependencies = ["typer>=0.12", "psutil>=5.9", "requests>=2.34.2"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.5"]
