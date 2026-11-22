@@ -50,3 +50,14 @@ def ssl_cmd(
             failed = True
     if failed:
         raise typer.Exit(code=1)
+
+@app.command()
+def sys(
+    top: int = typer.Option(5, '--top', '-n', min=1, help='Number of top processes'),
+    as_json: bool = typer.Option(False, '--json', help='Output JSON'),
+) -> None:
+    """Show CPU, memory, disk usage and top processes."""
+    from devtool import sysinfo
+
+    data = sysinfo.collect(top=top)
+    typer.echo(json.dumps(data, indent=2) if as_json else sysinfo.render(data))
