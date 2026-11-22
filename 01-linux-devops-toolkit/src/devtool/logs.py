@@ -3,8 +3,8 @@ from __future__ import annotations
 
 import re
 from collections import Counter
+from collections.abc import Iterable
 from dataclasses import dataclass, field
-from typing import Iterable
 
 LOG_RE = re.compile(
     r'^(?P<ip>\S+) \S+ \S+ \[(?P<time>[^\]]+)\] '
