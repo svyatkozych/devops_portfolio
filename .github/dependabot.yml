@@ -8,3 +8,7 @@ updates:
     directory: /01-linux-devops-toolkit
     schedule:
       interval: weekly
+  - package-ecosystem: docker
+    directory: /01-linux-devops-toolkit/src/logparser
+    schedule:
+      interval: weekly
