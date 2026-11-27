@@ -61,3 +61,20 @@ def sys(
 
     data = sysinfo.collect(top=top)
     typer.echo(json.dumps(data, indent=2) if as_json else sysinfo.render(data))
+
+@app.command()
+def notify(text: str = typer.Argument(..., help='Message text')) -> None:
+    """Send a message to Telegram (credentials from environment variables)."""
+    import requests
+
+    from devtool import notify as notify_mod
+
+    try:
+        notify_mod.send(text)
+    except notify_mod.ConfigError as exc:
+        typer.echo(f'config error: {exc}', err=True)
+        raise typer.Exit(code=2)
+    except requests.RequestException:
+        typer.echo('failed to send message (network or API error)', err=True)
+        raise typer.Exit(code=1)
+    typer.echo('sent')
