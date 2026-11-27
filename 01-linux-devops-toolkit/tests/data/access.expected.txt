@@ -1,0 +1,16 @@
+Requests:      10
+Parse errors:  1
+4xx:           1
+5xx:           2 (20.0%)
+
+Top IPs:
+       4  203.0.113.5
+       3  198.51.100.7
+       3  192.0.2.44
+
+Top paths:
+       4  /api/tasks
+       3  /
+       1  /missing
+       1  /api/tasks/9
+       1  /login

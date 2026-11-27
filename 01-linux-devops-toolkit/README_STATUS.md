@@ -10,6 +10,6 @@
 | system units | done |
 | devtool logs | done |
 | devtool ssl, sys, notify | planned |
-| logparser (C++) | planned |
-| CI | planned |
+| logparser (C++) | done |
+| CI | done |
 | release v1.0.0 | planned |
